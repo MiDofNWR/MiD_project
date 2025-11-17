@@ -25,9 +25,9 @@ double result(const double x);
 
 int main(void) {
     
-    double i = valid();
-    double j = valid();
-    double step = valid();
+    const double i = valid();
+    const double j = valid();
+    const double step = valid();
     
     for (float x = i; x <= j + DBL_EPSILON; x += step) {
         printf("x = %.2f y = %f\n", x, result(x));
