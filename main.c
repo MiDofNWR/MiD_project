@@ -34,7 +34,7 @@ double valid(void);
 
 int main(void) {
     
-    const double a = valid(), b = valid();
+    const double a = valid(), const double b = valid();
     
     printf("%lf\n%lf\n", res1(a, b), res2(a, b));
         
