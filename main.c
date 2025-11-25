@@ -42,7 +42,7 @@ double valid(void);
 */
 
 int main(void) {
-    const double a = 1.5;
+    const double a = 2.1;
     printf("Введи число x: ");
     double x = valid();
     
@@ -69,7 +69,7 @@ double res2(const double a, const double x) {
 }
 
 _Bool checkX(const double x) {
-  return (x != 0);
+  return fabs(x) >= DBL_EPSILON;
 }
 
 double valid(void) {
