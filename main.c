@@ -33,10 +33,16 @@ void CheckMinMax(const int min, const int max);
 void Not0(const int * array);
 
 /**
- * @brief Множество выборов
+ * @enum Выбор заполнения массива
 */
 
-enum { Choise1 = 1, Choise2 = 2, Task1 = 1, Task2 = 2, Task3 = 3};
+enum {Choise1 = 1, Choise2 = 2};
+
+/**
+ * @enum Выбор операции
+*/
+
+enum {Task1 = 1, Task2 = 2, Task3 = 3};
 
 /**
  * @brief Заполняет массив элементами, который пользователь вводит с клавиатуры, c учётом максимально и минимально возможного
