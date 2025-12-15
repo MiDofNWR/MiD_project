@@ -246,7 +246,7 @@ void PrintArray(const int * array, const size_t size) {
     Not0(array);
     
     printf("\nВведённый массив: ");
-    for(int i = 0; i < size; i++) {
+    for (size_t i = 0; i < size; i++) {
         printf("%d ", array[i]);
     }
     printf("\n");
@@ -280,7 +280,7 @@ void defTask1(const int * array, const size_t size) {
     Not0(array);
     
     int sum = 0;
-    for (int i = 0; i < size; i++) {
+    for (size_t i = 0; i < size; i++) {
         if (array[i] < 0) {
             sum += array[i];
         }
@@ -300,7 +300,7 @@ void defTask2(const int *  array, const size_t size) {
     const int A = Valid();
     int count = 0;
     
-    for (int i = 0; i < size; i++) {
+    for (size_t i = 0; i < size; i++) {
         if ((array[i] < 0) && (array[i] <= A)) {
             count++;
         }
@@ -316,9 +316,9 @@ void defTask3(const int * array, const size_t size) {
     
     Not0(array);
     
-    int np = 0;
+    size_t np = 0;
     
-    for (int i = 0; i < size - 1; i++) {
+    for (size_t i = 0; i < size - 1; i++) {
         int a = array[i];
         int b = array[i + 1];
         if (((a > -1) && (b <= -1)) || ((a <= -1) && (b > -1))) {
@@ -329,5 +329,5 @@ void defTask3(const int * array, const size_t size) {
         printf("Соседних пар элементов с разными знаками в масиве нет\n");
         exit(0);
     }
-    printf("Номер последней пары соседних элементов с разными знаками: %d\n", np);
+    printf("Номер последней пары соседних элементов с разными знаками: %zu\n", np);
 }
